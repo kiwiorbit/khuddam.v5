@@ -297,7 +297,7 @@ body {
     </header>
 
     <!-- Page Title Section -->
-    <section class="relative pt-32 pb-16 bg-black/50">
+    <section id="page-title" class="relative pt-32 pb-16 bg-black/50">
         <div class="container mx-auto px-4 relative z-10">
             <div class="text-center">
                 <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">Register Now</h1>
@@ -725,9 +725,9 @@ body {
 
                 // Scroll higher up to show more context above the form
                 setTimeout(() => {
-                    const formCardSection = document.querySelector('#form-card');
-                    if (formCardSection) {
-                        formCardSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    const pageTitleSection = document.querySelector('#page-title');
+                    if (pageTitleSection) {
+                        pageTitleSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
                 }, 200);
             }
